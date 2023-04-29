@@ -1,0 +1,33 @@
+@import "../mixin";
+@import "../variables";
+
+.card {
+	width: 380px;
+	height: 490px;
+	margin-right: 4.375rem;
+	margin-bottom: 4.875rem;
+}
+
+.img {
+	border: 1px solid $medium-gray-color;
+	border-radius: 10px;
+}
+
+.seller {
+	@include font(400, 16px, 22px);
+	color: $deep-gray-color;
+	margin-bottom: 0.625rem;
+}
+
+.title {
+	@include font(400, 18px, 22px);
+	margin-bottom: 0.625rem;
+}
+
+.price {
+	@include font(700, 24px, 30px);
+
+	& span {
+		@include font(400, 16px, 20px);
+	}
+}
