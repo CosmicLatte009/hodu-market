@@ -1,0 +1,41 @@
+@import "../mixin";
+@import "../variables";
+
+.wrap {
+	@include flex-row();
+	@include justify-between();
+	@include align-center();
+	width: 150px;
+	background-color: #ffffff;
+	border: 1px solid $medium-gray-color;
+	border-radius: 5px;
+
+	& button {
+		padding: 0.85rem;
+	}
+}
+
+.amount {
+	@include font(400, 18px, 23px);
+	padding: 0.813rem 1.25rem 0.875rem 1.25rem;
+}
+
+.plus-btn.able {
+	background-color: #ffffff;
+}
+
+.plus-btn.disabled {
+	background-color: $scroll-gray-color;
+}
+
+.divider-right {
+	background-color: $medium-gray-color;
+	width: 1px;
+	height: 50px;
+}
+
+.divider-left {
+	background-color: $medium-gray-color;
+	width: 1px;
+	height: 50px;
+}
