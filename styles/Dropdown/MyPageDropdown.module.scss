@@ -1,0 +1,35 @@
+@import "../mixin";
+@import "../variables";
+
+.wrap {
+	width: 130px;
+	height: 118px;
+	border-radius: 10px;
+	outline: none;
+	background-color: #ffffff;
+	-webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+	filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+
+	& option {
+		@include font(500, 16px, 40px);
+		color: $deep-gray-color;
+		width: 110px;
+		margin-left: 10px;
+		text-align: center;
+		padding: 10px 0 10px 0;
+	}
+
+	& option:first-of-type {
+		margin-top: 0.625rem;
+		margin-bottom: 0.5rem;
+	}
+
+	& option:hover,
+	& option:checked,
+	& option:active {
+		border: 1px solid $deep-gray-color;
+		border-radius: 5px;
+		color: #000000;
+		background-color: inherit;
+	}
+}
