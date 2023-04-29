@@ -1,0 +1,99 @@
+@import "../mixin";
+@import "../variables";
+
+%btn-large {
+	@include btn-size(220px, 68px);
+	@include font(700, 24px, 68px);
+}
+
+%btn-medium {
+	@include btn-size(280px, 60px);
+	@include font(700, 18px, 60px);
+}
+
+%btn-ms {
+	@include btn-size(166px, 54px);
+	@include font(500, 16px, 54px);
+}
+
+%btn-ms-icon {
+	@include btn-size(168px, 54px);
+	@include font(500, 18px, 54px);
+}
+
+%btn-small {
+	@include btn-size(80px, 40px);
+	@include font(500, 16px, 40px);
+}
+
+.btn {
+	&.large.main {
+		@extend %btn-large;
+		@include btn-theme($main-color, #ffffff, 0, 0);
+	}
+
+	&.large.disabled {
+		@extend %btn-large;
+		@include btn-theme($medium-gray-color, #ffffff, 0, 0);
+	}
+
+	&.medium.main {
+		@extend %btn-medium;
+		@include btn-theme($main-color, #ffffff, 0, 0);
+	}
+
+	&.medium.disabled {
+		@extend %btn-medium;
+		@include btn-theme($medium-gray-color, #ffffff, 0, 0);
+	}
+
+	&.medium.dark {
+		@extend %btn-medium;
+		@include btn-theme($deep-gray-color, #ffffff, 0, 0);
+	}
+
+	&.medium.white {
+		@extend %btn-medium;
+		@include btn-theme(#ffffff, $deep-gray-color, 1px, $medium-gray-color);
+	}
+
+	&.ms.main {
+		@extend %btn-ms;
+		@include btn-theme($main-color, #ffffff, 0, 0);
+	}
+
+	&.ms.white {
+		@extend %btn-ms;
+		@include btn-theme(#ffffff, $deep-gray-color, 1px, $medium-gray-color);
+	}
+
+	&.ms.white:hover {
+		@extend %btn-ms;
+		@include btn-theme(#ffffff, #000000, 1px, $deep-gray-color);
+	}
+
+	&.ms.icon {
+		@extend %btn-ms-icon;
+		@include btn-theme($main-color, #ffffff, 0, 0);
+
+		& img {
+			vertical-align: middle;
+			margin-right: 0.625rem;
+		}
+	}
+
+	&.small.main {
+		@extend %btn-small;
+		@include btn-theme($main-color, #ffffff, 0, 0);
+	}
+
+	&.small.white {
+		@extend %btn-small;
+		@include btn-theme(#ffffff, $deep-gray-color, 1px, $medium-gray-color);
+	}
+
+	&.small.white:hover {
+		@extend %btn-small;
+		@include btn-theme(#ffffff, #000000, 1px, $deep-gray-color);
+	}
+}

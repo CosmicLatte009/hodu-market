@@ -1,0 +1,34 @@
+@import "../mixin";
+@import "../variables";
+
+.tab-menu-btn {
+	@include font(500, 16px, 50px);
+	@include flex-row();
+	@include align-center();
+	width: 250px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	border-radius: 5px;
+
+	&.off {
+		background: #ffffff;
+		&:hover {
+			background-color: $light-color;
+		}
+	}
+
+	&.on {
+		background: $main-color;
+		color: #ffffff;
+	}
+}
+
+.badge {
+	@include font(500, 12px, 20px);
+	color: #ffffff;
+	text-align: center;
+	width: 20px;
+	margin-left: 4.813rem;
+	background-color: $alert-color;
+	border-radius: 100px;
+}
