@@ -1,0 +1,61 @@
+@import "../mixin";
+@import "../variables";
+
+.card {
+	@include flex-row();
+	@include align-center();
+	width: 1280px;
+	border: 1px solid $medium-gray-color;
+	border-radius: 10px;
+	padding: 1.25rem 1.125rem 1.25rem 1.875rem;
+}
+
+.img {
+	border-radius: 10px;
+	margin-right: 2.25rem;
+	margin-left: 2.5rem;
+}
+
+.info {
+	margin-right: 3rem;
+	& p:last-of-type {
+		@include font(400, 14px, 18px);
+		color: $deep-gray-color;
+	}
+}
+
+.seller {
+	@include font(400, 14px, 18px);
+	color: $deep-gray-color;
+	margin-bottom: 0.625rem;
+}
+
+.title {
+	@include font(400, 18px, 22px);
+	display: block;
+	margin-bottom: 0.625rem;
+	min-width: 26.125rem;
+}
+
+.price {
+	@include font(700, 16px, 20px);
+	margin-bottom: 2.5rem;
+}
+
+.total-price {
+	margin-left: 9.25rem;
+	margin-right: 3.75rem;
+	& strong {
+		@include font(700, 18px, 23px);
+		color: $alert-color;
+		display: block;
+		text-align: center;
+		margin-bottom: 1.625rem;
+	}
+}
+
+.close-btn {
+	@include item-order-end();
+	@include align-self-start();
+	padding: 5px;
+}

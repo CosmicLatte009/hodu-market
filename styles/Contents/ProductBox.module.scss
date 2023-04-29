@@ -1,0 +1,39 @@
+@import "../mixin";
+@import "../variables";
+
+.card {
+	@include flex-row();
+	@include align-center();
+	width: 1440px;
+	border-bottom: 1px solid $medium-gray-color;
+	padding: 1rem 1.875rem;
+
+	& button:first-of-type {
+		margin-right: 3.75rem;
+	}
+}
+
+.img {
+	border-radius: 100px;
+	margin-right: 1.875rem;
+}
+
+.info {
+	margin-right: 16.688rem;
+	& p:last-of-type {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+	}
+}
+
+.title {
+	@include font(400, 18px, 22px);
+	display: block;
+	margin-bottom: 0.625rem;
+	min-width: 31.25rem;
+}
+
+.price {
+	@include font(500, 18px, 22px);
+	margin-right: 13.563rem;
+}
