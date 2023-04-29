@@ -1,0 +1,10 @@
+@import "../mixin";
+@import "../variables";
+
+.icon-group {
+	@include flex-row();
+	margin-right: 20rem;
+	button:first-of-type {
+		margin-right: 1.75rem;
+	}
+}

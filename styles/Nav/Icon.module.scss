@@ -1,0 +1,14 @@
+@import "../mixin";
+@import "../variables";
+
+.icon-button {
+	@include font(400, 12px, 14px);
+	color: $deep-gray-color;
+	white-space: nowrap;
+}
+
+.icon-img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.25rem;
+}

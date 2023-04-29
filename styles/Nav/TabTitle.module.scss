@@ -1,0 +1,33 @@
+@import "../mixin";
+@import "../variables";
+
+.wrap {
+	@include flex-row();
+	@include align-center();
+	width: 1280px;
+	height: 60px;
+	background: $light-gray-color;
+	border-radius: 10px;
+
+	& span {
+		@include font(400, 18px, 23px);
+	}
+
+	& span:first-of-type {
+		margin-left: 19.625rem;
+		margin-right: 23.688rem;
+	}
+
+	& span:last-of-type {
+		margin-left: 14.875rem;
+		margin-right: 8.188rem;
+	}
+}
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	border: 2px solid $main-color;
+	margin-left: 1.875rem;
+}
