@@ -1,0 +1,17 @@
+@import "mixin";
+@import "variables";
+
+.alert {
+	@include font(400, 16px, 20.3px);
+	display: block;
+	width: 192px;
+	margin-top: 0.625rem;
+
+	&.valid {
+		color: $main-color;
+	}
+
+	&.invalid {
+		color: $alert-color;
+	}
+}
