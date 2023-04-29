@@ -1,0 +1,31 @@
+@import "../mixin";
+@import "../variables";
+
+.label {
+	@include font(400, 16px, 20px);
+	color: $deep-gray-color;
+	display: block;
+	margin-bottom: 0.625rem;
+}
+
+.input-wrap {
+	@include flex-row();
+	@include justify-between();
+	width: 220px;
+	border: 1px solid $medium-gray-color;
+	border-radius: 5px;
+	padding-left: 1rem;
+	overflow: hidden;
+
+	& span {
+		@include font(400, 14px, 20px);
+		color: #ffffff;
+		background-color: $medium-gray-color;
+		padding: 1.062rem 1.25rem 1.062rem 1.188rem;
+	}
+}
+
+.input {
+	@include font(400, 16px, 54px);
+	max-width: 51px;
+}

@@ -1,0 +1,28 @@
+@import "../mixin";
+@import "../variables";
+
+.label {
+	@include font(400, 16px, 20px);
+	color: $deep-gray-color;
+	display: block;
+	margin-bottom: 0.625rem;
+}
+
+.input-wrap {
+	width: 826px;
+	border: 1px solid $medium-gray-color;
+	border-radius: 5px;
+	padding-left: 1rem;
+
+	& span {
+		@include font(400, 14px, 18px);
+		color: $medium-gray-color;
+		float: right;
+		margin-top: 1.188rem;
+		margin-right: 1rem;
+	}
+}
+
+.input {
+	@include font(400, 16px, 54px);
+}
