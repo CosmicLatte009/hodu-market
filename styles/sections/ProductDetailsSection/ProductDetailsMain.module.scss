@@ -1,0 +1,96 @@
+@import "../../mixin";
+@import "../../variables";
+
+.main-wrap {
+	margin: 0 6.25rem 6rem;
+	@include flex-row();
+}
+
+.product-wrap {
+	margin-top: 5rem;
+	@include flex-row();
+}
+
+.product-info-wrap {
+	width: 630px;
+	margin-left: 3.125rem;
+	margin-bottom: 8.75rem;
+}
+
+.info {
+	margin-bottom: 1.25rem;
+	& p:last-of-type {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+		margin-top: 8.625rem;
+	}
+
+	.seller {
+		@include font(400, 18px, 23px);
+		color: $deep-gray-color;
+		margin-bottom: 1rem;
+	}
+
+	.title {
+		@include font(400, 36px, 45px);
+	}
+
+	& strong {
+		display: block;
+		margin-top: 1.25rem;
+	}
+}
+
+.count::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: $medium-gray-color;
+	margin-bottom: 1.875rem;
+}
+
+.count::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: $medium-gray-color;
+	margin-top: 1.875rem;
+}
+
+.total-price {
+	@include flex-row();
+	@include align-center();
+	@include justify-between();
+	margin-top: 2rem;
+	margin-bottom: 1.375rem;
+	& p:nth-child(1) {
+		@include font(500, 18px, 23px);
+		min-width: 380px;
+	}
+
+	& p:nth-child(2) {
+		@include font(400, 18px, 23px);
+		color: $deep-gray-color;
+		margin-right: 0.75rem;
+		min-width: 86px;
+		& > span {
+			color: $main-color;
+		}
+
+		&::after {
+			content: "|";
+			display: inline-block;
+			width: 5px;
+			height: 23px;
+			margin-left: 0.688rem;
+			color: $medium-gray-color;
+		}
+	}
+
+	& strong {
+		@include item-order-end();
+		color: $main-color;
+	}
+}

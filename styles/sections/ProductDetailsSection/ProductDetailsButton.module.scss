@@ -1,0 +1,38 @@
+@import "../../mixin";
+@import "../../variables";
+
+%buy-btn {
+	@include font(700, 18px, 22px);
+	@include btn-size(416px, 60px);
+}
+
+%cart-btn {
+	@include font(700, 18px, 22px);
+	@include btn-size(200px, 60px);
+}
+
+.btn-group.able {
+	& button:nth-child(1) {
+		@extend %buy-btn;
+		@include btn-theme($main-color, #ffffff, 0, 0);
+		margin-right: 0.875rem;
+	}
+
+	& button:nth-child(2) {
+		@extend %cart-btn;
+		@include btn-theme($deep-gray-color, #ffffff, 0, 0);
+	}
+}
+
+.btn-group.disabled {
+	& button:nth-child(1) {
+		@extend %buy-btn;
+		@include btn-theme($medium-gray-color, #ffffff, 0, 0);
+		margin-right: 0.875rem;
+	}
+
+	& button:nth-child(2) {
+		@extend %cart-btn;
+		@include btn-theme($medium-gray-color, #ffffff, 0, 0);
+	}
+}
