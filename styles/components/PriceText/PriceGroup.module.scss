@@ -1,0 +1,36 @@
+@import "../mixin";
+@import "../variables";
+
+.wrap {
+	@include flex-column();
+	@include align-center();
+}
+
+.wrap.medium {
+	& p {
+		@include font(400, 16px, 20px);
+		margin-bottom: 0.75rem;
+	}
+
+	& strong {
+		@include font(700, 24px, 30px);
+		& > span {
+			@include font(400, 16px, 20px);
+			margin-left: 2px;
+		}
+	}
+}
+
+.wrap.large {
+	& p {
+		@include font(700, 16px, 25px);
+	}
+	& strong {
+		@include font(700, 36px, 45px);
+		color: $alert-color;
+		& > span {
+			@include font(400, 18px, 23px);
+			margin-left: 2px;
+		}
+	}
+}
