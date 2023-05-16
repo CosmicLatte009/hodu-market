@@ -1,0 +1,39 @@
+@import "../../mixin";
+@import "../../variables";
+
+.dash-board {
+	margin-left: 1.875rem;
+}
+
+.table-row {
+	@include flex-row();
+	@include align-center();
+	padding: 0 3.313rem 0 22.875rem;
+	height: 60px;
+	background-color: #ffffff;
+	border: 1px solid $medium-gray-color;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	& > span {
+		@include font(400, 18px, 23px);
+	}
+
+	& > span:nth-child(2) {
+		margin-left: 29.563rem;
+		margin-right: 15rem;
+	}
+
+	& > span:nth-child(3) {
+		margin-right: 6.625rem;
+	}
+}
+
+.product-box-list {
+	min-height: 824px;
+	background-color: $light-gray-color;
+	border-left: 1px solid $medium-gray-color;
+	border-right: 1px solid $medium-gray-color;
+	border-bottom: 1px solid $medium-gray-color;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
