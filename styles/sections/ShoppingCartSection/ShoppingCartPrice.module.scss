@@ -1,0 +1,15 @@
+@import "../../mixin";
+@import "../../variables";
+
+.cart-price {
+	@include flex-row();
+	@include align-center();
+	@include justify-between();
+	width: 1280px;
+	height: 150px;
+	padding-left: 7rem;
+	padding-right: 5.688rem;
+	background-color: $light-gray-color;
+	border-radius: 10px;
+	margin-bottom: 2.5rem;
+}
