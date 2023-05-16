@@ -1,0 +1,40 @@
+@import "../../mixin";
+@import "../../variables";
+
+.product-info-list {
+	margin-bottom: 1.875rem;
+}
+
+.nav {
+	@include flex-row();
+	@include align-center();
+	width: 1280px;
+	height: 60px;
+	background: $light-gray-color;
+	border-radius: 10px;
+
+	& span {
+		@include font(400, 18px, 23px);
+	}
+
+	& span:nth-child(1) {
+		margin-left: 16.313rem;
+		margin-right: 22.5rem;
+	}
+
+	& span:nth-child(3) {
+		margin-left: 11.75rem;
+		margin-right: 10.688rem;
+	}
+}
+
+.total-price {
+	float: right;
+	@include font(500, 18px, 23px);
+
+	& strong {
+		margin-left: 0.625rem;
+		@include font(700, 24px, 30px);
+		color: $alert-color;
+	}
+}

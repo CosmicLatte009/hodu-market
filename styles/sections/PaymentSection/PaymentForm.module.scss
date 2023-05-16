@@ -1,0 +1,11 @@
+@import "../../mixin";
+@import "../../variables";
+
+.form-wrap {
+	margin-bottom: 22.375rem;
+
+	& > div:last-of-type {
+		@include flex-row();
+		@include justify-between();
+	}
+}
