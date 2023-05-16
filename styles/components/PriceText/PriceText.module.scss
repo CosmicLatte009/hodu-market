@@ -1,0 +1,46 @@
+@import "../mixin";
+@import "../variables";
+
+.amount > span {
+	display: inline-block;
+}
+
+.amount.small.s {
+	@include font(700, 18px, 23px);
+
+	& > span {
+		@include font(400, 14px, 18px);
+		color: $deep-gray-color;
+		margin-left: 4px;
+	}
+}
+
+.amount.small.l {
+	@include font(700, 18px, 23px);
+}
+
+.amount.medium.s {
+	@include font(700, 24px, 30px);
+
+	& > span {
+		@include font(400, 16px, 20px);
+		margin-left: 2px;
+	}
+}
+
+.amount.medium.l {
+	@include font(700, 24px, 30px);
+}
+
+.amount.large.s {
+	@include font(700, 36px, 45px);
+
+	& > span {
+		@include font(400, 18px, 23px);
+		margin-left: 2px;
+	}
+}
+
+.amount.large.l {
+	@include font(700, 36px, 45px);
+}
