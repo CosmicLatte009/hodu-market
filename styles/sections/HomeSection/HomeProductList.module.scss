@@ -1,0 +1,12 @@
+@import "../../mixin";
+@import "../../variables";
+
+.product-list-wrap {
+	margin: 5rem 0 11.25rem;
+	@include flex-row();
+	@include justify-between();
+	@include align-center();
+	width: 1280px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
