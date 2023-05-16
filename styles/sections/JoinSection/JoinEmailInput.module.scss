@@ -1,0 +1,54 @@
+@import "../../mixin";
+@import "../../variables";
+
+%input {
+	@include font(400, 16px, 20px);
+	width: 220px;
+	padding-left: 1rem;
+	border-radius: 5px;
+	height: 54px;
+}
+
+.wrap {
+	@include font(700, 16px, 20px);
+	color: $deep-gray-color;
+
+	& label {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+		display: block;
+		margin-bottom: 0.625rem;
+	}
+
+	& input:first-of-type {
+		margin-right: 11px;
+	}
+
+	& input:last-of-type {
+		margin-left: 11px;
+	}
+
+	&.before-check {
+		& input {
+			@extend %input;
+			border: 1px solid $medium-gray-color;
+			&:active {
+				border: 1px solid $main-color;
+			}
+		}
+	}
+
+	&.valid {
+		& input {
+			@extend %input;
+			border: 1px solid $main-color;
+		}
+	}
+
+	&.invalid {
+		& input {
+			@extend %input;
+			border: 1px solid $alert-color;
+		}
+	}
+}
