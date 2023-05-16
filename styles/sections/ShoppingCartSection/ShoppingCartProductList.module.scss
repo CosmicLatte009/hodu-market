@@ -1,0 +1,10 @@
+@import "../../mixin";
+@import "../../variables";
+
+.product-list-group {
+	margin: 2.188rem 0 8rem;
+
+	& > *:not(:last-child) {
+		margin-bottom: 0.625rem;
+	}
+}

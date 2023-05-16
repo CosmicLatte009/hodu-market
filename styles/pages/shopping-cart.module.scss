@@ -1,0 +1,13 @@
+@import "./mixin";
+@import "./variables";
+
+.wrap {
+	@include flex-column();
+	@include align-center();
+}
+
+.title {
+	@include font(700, 36px, 44px);
+	margin-top: 3.375rem;
+	margin-bottom: 3.25rem;
+}
