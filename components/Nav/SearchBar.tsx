@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/Nav/SearchBar.module.scss";
+import styles from "../../styles/components/Nav/SearchBar.module.scss";
 
 function SearchBar() {
 	return (
