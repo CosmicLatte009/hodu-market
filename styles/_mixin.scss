@@ -29,6 +29,12 @@
 	flex-direction: column;
 }
 
+@mixin justify-start {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
 @mixin justify-center {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
@@ -44,6 +50,18 @@
 @mixin justify-around {
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
+}
+
+@mixin align-start {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+@mixin align-end {
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
 }
 
 @mixin align-center {

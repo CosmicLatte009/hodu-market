@@ -151,10 +151,6 @@ input {
 	overflow: hidden;
 }
 
-main {
-	padding: 45px 0 55px;
-}
-
 button {
 	border: none;
 	cursor: pointer;
