@@ -4,6 +4,7 @@
 .card {
 	@include flex-row();
 	@include align-center();
+	position: relative;
 	width: 1280px;
 	border: 1px solid $medium-gray-color;
 	border-radius: 10px;
@@ -44,9 +45,8 @@
 
 .total-price {
 	margin-left: 9.25rem;
-	margin-right: 3.75rem;
+
 	& strong {
-		@include font(700, 18px, 23px);
 		color: $alert-color;
 		display: block;
 		text-align: center;
@@ -55,7 +55,8 @@
 }
 
 .close-btn {
-	@include item-order-end();
-	@include align-self-start();
+	position: absolute;
+	top: 18px;
+	right: 18px;
 	padding: 5px;
 }

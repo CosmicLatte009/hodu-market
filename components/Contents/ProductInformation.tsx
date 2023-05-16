@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/Contents/ProductInformation.module.scss";
+import styles from "../../styles/components/Contents/ProductInformation.module.scss";
 
 const ProductInformation: React.FC = () => {
 	return (

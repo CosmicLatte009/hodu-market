@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styles from "../styles/Input/AlertBox.module.scss";
+import styles from "../styles/components/Input/AlertBox.module.scss";
 
 interface MyProps {
 	children: ReactNode;

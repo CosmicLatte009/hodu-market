@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/Nav/TabTitle.module.scss";
+import styles from "../../styles/components/Nav/TabTitle.module.scss";
 
 const TabTitle: React.FC = () => {
 	return (

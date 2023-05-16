@@ -1,4 +1,4 @@
-import styles from "../../styles/Button/TabButton.module.scss";
+import styles from "../../styles/components/Button/TabButton.module.scss";
 
 const TabButton: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
 	return (

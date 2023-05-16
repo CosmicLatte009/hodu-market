@@ -1,4 +1,4 @@
-import styles from "../../styles/Button/Button.module.scss";
+import styles from "../../styles/components/Button/Button.module.scss";
 import { ReactNode } from "react";
 
 interface MyProps {

@@ -1,4 +1,4 @@
-import styles from "../../styles/Input/TextInput.module.scss";
+import styles from "../../styles/components/Input/TextInput.module.scss";
 
 interface MyProps {
 	placeholder: string;

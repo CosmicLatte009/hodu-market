@@ -1,5 +1,6 @@
 import Image from "next/image";
-import styles from "../../styles/Contents/ProductList.module.scss";
+import PriceText from "../PriceText/PriceText";
+import styles from "../../styles/components/Contents/ProductList.module.scss";
 
 const ProductList: React.FC = () => {
 	return (
@@ -15,9 +16,9 @@ const ProductList: React.FC = () => {
 			<strong className={styles.title}>
 				Hack Your Life 개발자 노트북 파우치
 			</strong>
-			<p className={styles.price}>
-				29,000 <span>원</span>
-			</p>
+			<PriceText size="medium" unit="on" unitSize="s">
+				29,000
+			</PriceText>
 		</div>
 	);
 };

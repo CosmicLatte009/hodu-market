@@ -1,6 +1,7 @@
 import Image from "next/image";
-import styles from "../../styles/Contents/ProductBox.module.scss";
+import styles from "../../styles/components/Contents/ProductBox.module.scss";
 import Button from "../Button/Button";
+import PriceText from "../PriceText/PriceText";
 
 const ProductBox: React.FC = () => {
 	return (
@@ -16,11 +17,11 @@ const ProductBox: React.FC = () => {
 				<div className={styles.info}>
 					<strong className={styles.title}>딥러닝 개발자 무릎 담요</strong>
 
-					<p>재고: 370개</p>
+					<p>재고 : 370개</p>
 				</div>
-
-				<strong className={styles.price}>17,500원</strong>
-
+				<PriceText size="small" unit="on" unitSize="l">
+					17,500
+				</PriceText>
 				<Button size="small" theme="main">
 					수정
 				</Button>

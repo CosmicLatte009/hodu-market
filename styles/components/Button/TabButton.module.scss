@@ -3,8 +3,9 @@
 
 .tab-btn {
 	width: 320px;
-	@include font(500, 18px, 60px);
+	@include font(500, 18px, 54px);
 	color: $deep-gray-color;
+	border-bottom: 6px solid $scroll-gray-color;
 
 	&:active {
 		@include font(700, 18px, 54px);

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Etc/Amount.module.scss";
+import styles from "../../styles/components/Etc/Amount.module.scss";
 import { ReactNode } from "react";
 
 interface MyProps {

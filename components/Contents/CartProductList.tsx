@@ -1,6 +1,7 @@
 import Image from "next/image";
+import styles from "../../styles/components/Contents/CartProductList.module.scss";
 import Button from "../Button/Button";
-import styles from "../../styles/Contents/CartProductList.module.scss";
+import PriceText from "../PriceText/PriceText";
 import Amount from "../Etc/Amount";
 
 const CartProductList: React.FC = () => {
@@ -22,7 +23,9 @@ const CartProductList: React.FC = () => {
 			</div>
 			<Amount able="able">1</Amount>
 			<div className={styles["total-price"]}>
-				<strong>17,500원</strong>
+				<PriceText size="small" unit="on" unitSize="l">
+					17,500
+				</PriceText>
 				<Button size="ms" theme="main">
 					주문하기
 				</Button>

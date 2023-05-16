@@ -1,6 +1,10 @@
 @import "../mixin";
 @import "../variables";
 
+.wrap {
+	display: block;
+}
+
 .check {
 	display: none;
 }
@@ -8,7 +12,7 @@
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	background-image: url("../public/assets/check-box.svg");
+	background-image: url("../../public/assets/check-box.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	cursor: pointer;
@@ -17,7 +21,7 @@
 }
 
 input[type="checkbox"]:checked + .check-label {
-	background-image: url("../public/assets/check-fill-box.svg");
+	background-image: url("../../public/assets/check-fill-box.svg");
 }
 
 .desc {

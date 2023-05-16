@@ -1,4 +1,4 @@
-import styles from "../styles/Dropdown/MyPageDropdown.module.scss";
+import styles from "../../styles/components/Dropdown/MyPageDropdown.module.scss";
 
 const MyPageDropdown: React.FC = () => {
 	return (

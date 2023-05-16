@@ -1,0 +1,35 @@
+@import "../mixin";
+@import "../variables";
+
+.wrap {
+	width: 152px;
+	height: 54px;
+	border: 1px solid $medium-gray-color;
+	border-radius: 5px;
+	@include font(400, 16px, 20px);
+	text-align: center;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	& option.checked {
+		background-color: $scroll-gray-color;
+	}
+}
+
+.wrap::-webkit-scrollbar {
+	width: 18px;
+	height: 90px;
+}
+
+.wrap::-webkit-scrollbar-thumb {
+	background-color: $medium-gray-color;
+	border-radius: 10px;
+	background-clip: padding-box;
+	border: 6px solid transparent;
+}
+
+.wrap::-webkit-scrollbar-track {
+	background-color: #f2f2f2;
+	overflow: hidden;
+}
