@@ -1,5 +1,5 @@
-@import "../mixin";
-@import "../variables";
+@import "../../mixin";
+@import "../../variables";
 
 .tab-menu-btn {
 	@include font(500, 16px, 50px);

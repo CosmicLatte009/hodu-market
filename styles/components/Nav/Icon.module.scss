@@ -1,5 +1,5 @@
-@import "../mixin";
-@import "../variables";
+@import "../../mixin";
+@import "../../variables";
 
 %icon-btn {
 	@include font(400, 12px, 14px);

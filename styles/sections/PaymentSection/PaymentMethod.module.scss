@@ -1,0 +1,47 @@
+@import "../../mixin";
+@import "../../variables";
+
+.payment-method {
+	min-width: 760px;
+	& h2 {
+		@include font(500, 24px, 30px);
+
+		&::after {
+			content: "";
+			display: block;
+			border-bottom: 2px solid $medium-gray-color;
+			margin-top: 1.125rem;
+		}
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		border-bottom: 2px solid $medium-gray-color;
+	}
+
+	.check {
+		display: none;
+	}
+
+	.check-label {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid $medium-gray-color;
+		border-radius: 100px;
+		cursor: pointer;
+		margin: 1.125rem 0.625rem 1.125rem 0;
+		vertical-align: middle;
+	}
+
+	& label:first-of-type {
+		margin-left: 0.75rem;
+	}
+
+	& p {
+		display: inline-block;
+		margin-right: 1.25rem;
+		@include font(400, 16px, 20px);
+	}
+}

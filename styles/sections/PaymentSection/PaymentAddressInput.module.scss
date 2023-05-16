@@ -1,0 +1,41 @@
+@import "../../mixin";
+@import "../../variables";
+
+%input {
+	border: 1px solid $medium-gray-color;
+	height: 40px;
+	margin: 0.5rem 0;
+}
+
+.wrap {
+	&::after {
+		content: "";
+		display: block;
+		border-bottom: 1px solid $medium-gray-color;
+	}
+
+	& label {
+		@include font(400, 16px, 20px);
+		display: inline-block;
+	}
+
+	& input:nth-of-type(1) {
+		@extend %input;
+		width: 170px;
+		margin: 0.5rem 0.625rem 0 6.938rem;
+	}
+
+	& input:nth-of-type(2),
+	input:nth-of-type(3) {
+		display: block;
+		@extend %input;
+		width: 800px;
+		margin-left: 10.625rem;
+	}
+}
+
+.btn {
+	@include btn-size(154px, 40px);
+	@include btn-theme($main-color, #ffffff, 0, 0);
+	@include font(500, 16px, 40px);
+}

@@ -1,5 +1,5 @@
-@import "../mixin";
-@import "../variables";
+@import "../../mixin";
+@import "../../variables";
 
 %btn-large {
 	@include btn-size(220px, 68px);

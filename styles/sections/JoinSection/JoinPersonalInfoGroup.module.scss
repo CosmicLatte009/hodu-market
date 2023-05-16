@@ -1,0 +1,10 @@
+@import "../../mixin";
+@import "../../variables";
+
+.join-personal-info-group {
+	margin-bottom: 50px;
+
+	& div:nth-child(2) {
+		margin: 1rem 0;
+	}
+}

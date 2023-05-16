@@ -1,0 +1,8 @@
+@import "../../mixin";
+@import "../../variables";
+
+.btn-group {
+	& > button:not(:last-child) {
+		margin-bottom: 0.625rem;
+	}
+}

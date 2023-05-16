@@ -1,5 +1,5 @@
-@import "../mixin";
-@import "../variables";
+@import "../../mixin";
+@import "../../variables";
 
 .label {
 	@include font(400, 16px, 20px);
