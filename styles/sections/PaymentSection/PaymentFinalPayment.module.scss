@@ -1,0 +1,59 @@
+@import "../../mixin";
+@import "../../variables";
+
+.final-payment {
+	min-width: 480px;
+	height: 400px;
+	& h2 {
+		@include font(500, 24px, 30px);
+		margin-bottom: 1.125rem;
+	}
+}
+
+.final-payment-box {
+	border: 2px solid $main-color;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.final-payment-info {
+	padding: 2rem 1.875rem 1.25rem 1.875rem;
+
+	& div {
+		@include flex-row();
+		@include justify-between();
+		@include align-center();
+	}
+
+	& div:not(:last-child) {
+		margin-bottom: 0.938rem;
+	}
+
+	& div {
+		margin-bottom: 1.25rem;
+	}
+
+	& span:not(:last-child) {
+		@include font(400, 16px, 20px);
+	}
+
+	& hr {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.pay-price {
+	& strong {
+		color: $alert-color;
+	}
+}
+.final-payment-check-wrap {
+	@include flex-column();
+	@include align-center();
+	background-color: $light-gray-color;
+	padding-bottom: 2.125rem;
+
+	& div {
+		margin: 1.875rem 0;
+	}
+}

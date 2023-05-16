@@ -1,0 +1,53 @@
+@import "../../mixin";
+@import "../../variables";
+
+%input {
+	@include font(400, 16px, 20px);
+	width: 152px;
+	height: 54px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.wrap {
+	& label {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+		display: block;
+		margin-bottom: 0.625rem;
+	}
+
+	& select {
+		margin-right: 0.75rem;
+		outline: none;
+	}
+
+	& input:first-of-type {
+		margin-right: 0.75rem;
+	}
+
+	&.before-check {
+		& input,
+		select {
+			@extend %input;
+			border: 1px solid $medium-gray-color;
+			&:active {
+				border: 1px solid $main-color;
+			}
+		}
+	}
+
+	&.valid {
+		& input {
+			@extend %input;
+			border: 1px solid $main-color;
+		}
+	}
+
+	&.invalid {
+		& input {
+			@extend %input;
+			border: 1px solid $alert-color;
+		}
+	}
+}

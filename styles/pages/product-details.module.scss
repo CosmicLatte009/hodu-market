@@ -1,0 +1,7 @@
+@import "./mixin";
+@import "./variables";
+
+.wrap {
+	@include flex-column();
+	@include align-center();
+}

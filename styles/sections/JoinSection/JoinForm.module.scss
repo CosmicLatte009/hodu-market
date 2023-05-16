@@ -1,0 +1,50 @@
+@import "../../mixin";
+@import "../../variables";
+
+.join-wrap {
+	@include flex-column();
+	@include align-center();
+	position: relative;
+	width: 550px;
+	height: 980px;
+	margin-bottom: 34px;
+}
+
+.join-btn-group {
+	& > button {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		@include font(500, 18px, 22px);
+		width: 275px;
+		border-top: 1px solid $medium-gray-color;
+		border-left: 1px solid $medium-gray-color;
+		border-right: 1px solid $medium-gray-color;
+		border-radius: 10px;
+		padding-top: 1.25rem;
+		padding-bottom: 2.375rem;
+	}
+
+	& > button:first-of-type {
+		left: 0px;
+		background-color: #ffffff;
+	}
+
+	& > button:last-of-type {
+		left: 275px;
+		background-color: $light-gray-color;
+	}
+}
+
+.join-input-group {
+	padding: 2.125rem 2.188rem 2.25rem 2.188rem;
+	position: absolute;
+	top: 60px;
+	z-index: 3;
+	background-color: #ffffff;
+	border-radius: 10px;
+	border-left: 1px solid $medium-gray-color;
+	border-right: 1px solid $medium-gray-color;
+	border-bottom: 1px solid $medium-gray-color;
+	border-top: 1px solid $medium-gray-color;
+}

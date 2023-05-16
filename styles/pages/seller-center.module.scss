@@ -1,0 +1,24 @@
+@import "./mixin";
+@import "./variables";
+
+.header {
+	@include flex-row();
+	@include justify-between();
+	@include align-center();
+	margin: 2.375rem 6.25rem;
+
+	& h1 {
+		@include font(700, 36px, 44px);
+	}
+
+	& strong {
+		@include font(500, 36px, 44px);
+		color: $main-color;
+		margin-left: 1rem;
+	}
+}
+
+.main-wrap {
+	margin: 0 6.25rem;
+	@include flex-row();
+}

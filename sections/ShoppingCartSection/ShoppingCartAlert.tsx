@@ -1,0 +1,12 @@
+import styles from "../../styles/sections/ShoppingCartSection/ShoppingCartAlert.module.scss";
+
+const ShoppingCartAlert: React.FC = () => {
+	return (
+		<div className={styles.alert}>
+			<strong>장바구니에 담긴 상품이 없습니다.</strong>
+			<p>원하는 상품을 장바구니에 담아보세요!</p>
+		</div>
+	);
+};
+
+export default ShoppingCartAlert;

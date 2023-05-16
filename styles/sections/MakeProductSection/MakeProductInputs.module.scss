@@ -1,0 +1,33 @@
+@import "../../mixin";
+@import "../../variables";
+
+.product-details-input {
+	& > *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.shipping-btn-group {
+	& strong {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+		display: block;
+		margin-bottom: 0.625rem;
+	}
+
+	& button:first-of-type {
+		margin-right: 0.625rem;
+	}
+
+	.shipping-btn-select {
+		@include btn-size(220px, 54px);
+		@include btn-theme($main-color, #ffffff, 0, 0);
+		@include font(500, 16px, 54px);
+	}
+
+	.shipping-btn-unselect {
+		@include btn-size(220px, 54px);
+		@include btn-theme(#ffffff, $deep-gray-color, 1px, $medium-gray-color);
+		@include font(500, 16px, 54px);
+	}
+}
