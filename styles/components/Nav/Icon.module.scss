@@ -1,10 +1,19 @@
 @import "../mixin";
 @import "../variables";
 
-.icon-button {
+%icon-btn {
 	@include font(400, 12px, 14px);
-	color: $deep-gray-color;
 	white-space: nowrap;
+}
+
+.icon-btn.unclicked {
+	@extend %icon-btn;
+	color: $deep-gray-color;
+}
+
+.icon-btn.clicked {
+	@extend %icon-btn;
+	color: $main-color;
 }
 
 .icon-img {
