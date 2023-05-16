@@ -1,0 +1,18 @@
+@import "../../mixin";
+@import "../../variables";
+
+.img-upload-wrap {
+	& strong {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+		display: block;
+		margin-bottom: 0.625rem;
+	}
+
+	& button {
+		width: 454px;
+		height: 454px;
+		background-color: $medium-gray-color;
+	}
+	margin-right: 2.5rem;
+}
