@@ -1,9 +1,9 @@
 import Image from "next/image";
-import styles from "../../styles/Nav/SellerTopNavBar.module.scss";
+import styles from "../../styles/components/Nav/SellerTopNavBar.module.scss";
 
 const SellerTopNavBar: React.FC = () => {
 	return (
-		<header className={styles["header-wrap"]}>
+		<nav className={styles["nav-wrap"]}>
 			<Image
 				className={styles.logo}
 				src="/assets/Logo-hodu.png"
@@ -11,8 +11,8 @@ const SellerTopNavBar: React.FC = () => {
 				width={80}
 				height={24}
 			/>
-			<h1 className={styles.title}>판매자 센터</h1>
-		</header>
+			<span className={styles.title}>판매자 센터</span>
+		</nav>
 	);
 };
 
