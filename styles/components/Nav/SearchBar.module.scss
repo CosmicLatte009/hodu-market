@@ -1,0 +1,29 @@
+@import "../mixin";
+@import "../variables";
+
+.search-wrap {
+	@include flex-row();
+	@include align-center();
+}
+
+.logo {
+	margin-right: 1.875rem;
+}
+
+.search-form {
+	@include flex-row();
+	@include justify-between();
+	width: 22.25rem;
+	border: 2px solid $main-color;
+	border-radius: 3.125rem;
+}
+
+.search-input {
+	width: 20.625rem;
+	margin-left: 1.375rem;
+}
+
+.search-icon {
+	padding: 10px;
+	margin-right: 1.375rem;
+}
