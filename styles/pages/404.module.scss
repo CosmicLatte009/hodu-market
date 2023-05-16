@@ -1,0 +1,36 @@
+@import "./mixin";
+@import "./variables";
+
+.wrap {
+	@include flex-row();
+	@include justify-center();
+	@include align-center();
+	height: 100vh;
+}
+
+.desc {
+	margin-left: 52.84px;
+	& h1 {
+		@include font(700, 36px, 44px);
+		margin-bottom: 20px;
+	}
+
+	& p {
+		@include font(400, 16px, 20px);
+		color: $deep-gray-color;
+		margin-bottom: 40px;
+	}
+
+	& button:first-of-type {
+		@include btn-size(200px, 60px);
+		@include btn-theme($main-color, #ffffff, 0, 0);
+		@include font(700, 18px, 60px);
+	}
+
+	& button:last-of-type {
+		margin-left: 14px;
+		@include btn-size(200px, 60px);
+		@include btn-theme(#ffffff, $deep-gray-color, 1px, $medium-gray-color);
+		@include font(700, 18px, 60px);
+	}
+}
