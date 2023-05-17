@@ -1,12 +1,23 @@
 @import "../../mixin";
 @import "../../variables";
 
+$items-per-row: 3;
+
 .product-list-wrap {
 	margin: 5rem 0 11.25rem;
 	@include flex-row();
-	@include justify-between();
+	@include justify-start();
 	@include align-center();
-	width: 1280px;
+	max-width: 1280px;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+
+	& > div {
+		margin-bottom: 78px;
+		margin-right: 70px;
+
+		&:nth-child(#{$items-per-row}n) {
+			margin-right: 0;
+		}
+	}
 }
