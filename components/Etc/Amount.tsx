@@ -10,6 +10,11 @@ const Amount: React.FC<MyProps> = (props) => {
 	const { children, able } = props;
 
 	const plusBtnClassName = `${styles["plus-btn"]} ${styles[able]}`;
+	const plusBtnImgPath =
+		able === "able"
+			? "/assets/icon-plus-line.svg"
+			: "/assets/icon-plus-line-white.svg";
+
 	return (
 		<div className={styles.wrap}>
 			<button type="button">
@@ -24,12 +29,7 @@ const Amount: React.FC<MyProps> = (props) => {
 			<span className={styles.amount}>{children}</span>
 			<div className={styles["divider-left"]}></div>
 			<button className={plusBtnClassName} type="button">
-				<Image
-					src="/assets/icon-plus-line.svg"
-					alt="추가 아이콘"
-					width={20}
-					height={20}
-				/>
+				<Image src={plusBtnImgPath} alt="추가 아이콘" width={20} height={20} />
 			</button>
 		</div>
 	);
