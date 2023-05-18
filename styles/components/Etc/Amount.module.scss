@@ -3,13 +3,14 @@
 
 .wrap {
 	@include flex-row();
-	@include justify-between();
-	@include align-center();
-	width: 150px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 	background-color: #ffffff;
 	border: 1px solid $medium-gray-color;
 	border-radius: 5px;
 	overflow: hidden;
+	position: relative;
 
 	& button {
 		padding: 0.85rem;
