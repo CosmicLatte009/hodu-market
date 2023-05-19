@@ -2,34 +2,60 @@
 @import "../../variables";
 
 .wrap {
+	position: relative;
 	width: 130px;
-	height: 118px;
+	height: 108px;
 	border-radius: 10px;
-	outline: none;
 	background-color: #ffffff;
 	-webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
 	filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+}
+
+.select {
+	width: 100%;
+	height: 100%;
+	outline: none;
+	background: transparent;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: -20px; /* 삼각형 폴리곤의 높이만큼 위로 이동 */
+		left: 50%; /* 가운데에 위치 */
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%); /* 가운데 정렬 */
+		border-style: solid;
+		border-width: 0 15px 30px 15px; /* 삼각형 모양 설정 */
+		border-color: transparent transparent #ffffff transparent; /* 삼각형 색상 설정 */
+		border-radius: 0 0 10px 10px;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
 	& option {
-		@include font(500, 16px, 40px);
-		color: $deep-gray-color;
 		width: 110px;
-		margin-left: 10px;
+		@include font(500, 16px, 20px);
+		color: $deep-gray-color;
 		text-align: center;
+		border-radius: 5px;
+		border: 1px solid transparent;
 		padding: 10px 0 10px 0;
+		margin-left: 10px;
 	}
 
 	& option:first-of-type {
-		margin-top: 0.625rem;
-		margin-bottom: 0.5rem;
+		margin-top: 10px;
+		margin-bottom: 8px;
 	}
 
 	& option:hover,
-	& option:checked,
-	& option:active {
+	& option:focus {
 		border: 1px solid $deep-gray-color;
-		border-radius: 5px;
 		color: #000000;
-		background-color: inherit;
+		background-color: #ffffff;
+		cursor: pointer;
 	}
 }
