@@ -1,6 +1,6 @@
 import SellerCenterTopNavBar from "@/components/Nav/SellerCenterTopNavBar";
-import styles from "../styles/pages/make-product.module.scss";
 import MakeProductForm from "@/sections/MakeProductSection/MakeProductForm";
+import styles from "../styles/pages/make-product.module.scss";
 
 function MakeProductPage() {
 	return (

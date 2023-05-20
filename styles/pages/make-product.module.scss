@@ -1,0 +1,13 @@
+@import "../mixin";
+@import "../variables";
+
+.header {
+	@include flex-row();
+	@include justify-between();
+	@include align-center();
+	margin: 2.375rem 6.25rem;
+
+	& h1 {
+		@include font(700, 36px, 44px);
+	}
+}

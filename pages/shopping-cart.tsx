@@ -1,4 +1,4 @@
-import styles from "../../styles/pages/shopping-cart.module.scss";
+import styles from "../styles/pages/shopping-cart.module.scss";
 import TopNavBar from "@/components/Nav/TopNavBar";
 import TabTitle from "@/components/Nav/TabTitle";
 import Button from "@/components/Button/Button";
