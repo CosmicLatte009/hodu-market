@@ -1,13 +1,36 @@
 @import "../mixin";
 @import "../variables";
 
-.header {
-	@include flex-row();
-	@include justify-between();
+.main-wrap {
+	@include flex-column();
 	@include align-center();
+}
+
+.header {
+	@include align-self-start();
 	margin: 2.375rem 6.25rem;
 
 	& h1 {
 		@include font(700, 36px, 44px);
+	}
+}
+
+.section-wrap {
+	margin: 0 6.25rem 8.5rem;
+	@include flex-row();
+}
+
+.aside-wrap {
+	margin-right: 5rem;
+	& strong {
+		color: $alert-color;
+		@include font(500, 16px, 20.03px);
+	}
+
+	& div {
+		margin-top: 0.625rem;
+		background-color: #ffefe8;
+		width: 320px;
+		height: 346px;
 	}
 }
